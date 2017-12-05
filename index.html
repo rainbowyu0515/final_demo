@@ -69,6 +69,9 @@
 		<audio id="sound18">
 			 <source src="music/flute.mp3" type="audio/mpeg"/>
 		</audio>
+		<audio id="sound19">
+			 <source src="music/streetMusic.mp3" type="audio/mpeg"/>
+		</audio>
 		<button style="border:none; background: #888; color:#eee; border-radius:5px; width: 50px; height: 25px; line-height: 25px;" onclick="stopAll()">stop</button>
 		<img src="bg.png" style="position: absolute; top: 50px; left: 50px; width:1920px;" />
 		<!-- main grid background  -->
@@ -245,7 +248,7 @@
 				$("#img98").animate({opacity:1},500);
 			}
 			function func6(){
-				$("#bg4").animate({opacity:1}, 300);
+				
 				aud_play_pause('sound12');
 			}
 			function func7(){
@@ -270,8 +273,6 @@
 				$("#img117").animate({opacity:1},500);
 			}
 			function func8(){
-				$("#bg14").animate({opacity:1}, 300);
-				$("#bg13").animate({opacity:1}, 300);
 				$("#bg12").animate({opacity:1}, 300);
 				$("#frame9").animate({opacity:1}, 300);
 				aud_play_pause('sound6');
@@ -290,6 +291,9 @@
 			}
 			function func10(){
 				$("#bg3").animate({opacity:1}, 300);
+				$("#bg4").animate({opacity:1}, 300);
+				$("#bg14").animate({opacity:1}, 300);
+				$("#bg13").animate({opacity:1}, 300);
 				$("#frame1").animate({opacity:1}, 300);
 				aud_play_pause('sound11');
 			}
@@ -338,12 +342,12 @@
 				$("#bg9").animate({opacity:1}, 300);
 				$("#bg10").animate({opacity:1}, 300);
 				$("#bg11").animate({opacity:1}, 300);
-				aud_play_pause('sound10');
-				aud_play_pause('sound5');
+				aud_play_pause('sound19');
+				aud_play_pause('sound13');
 			}
 			function func15(){
-				aud_play_pause('sound10');
-				aud_play_pause('sound5');
+				aud_play_pause('sound19');
+				aud_play_pause('sound13');
 			}
 
 			setTimeout(func1, 1000);
